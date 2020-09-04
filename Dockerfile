@@ -1,6 +1,7 @@
 FROM gcr.io/deeplearning-platform-release/base-cu101
 
-RUN conda install zeromq && \
+RUN conda install jupyterhub && \
+    conda install zeromq && \
     conda install modin && \
     conda install -c anaconda caffe-gpu && \
     conda install theano && \
