@@ -1,6 +1,4 @@
-FROM gcr.io/deeplearning-platform-release/base-cu101
-
-RUN conda install jupyterhub
+FROM gcr.io/deeplearning-platform-release/basecu101
 RUN conda instal zeromq
 RUN conda install -c anaconda caffe-gpu
 RUN conda install theano
