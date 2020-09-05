@@ -1,6 +1,6 @@
 FROM gcr.io/deeplearning-platform-release/basecu101
 RUN conda instal zeromq
-RUN conda install -c anaconda caffe-gpu
+RUN conda install caffe-gpu
 RUN conda install theano
 RUN conda install pip
 RUN pip install --no-cache-dir modin[all]
