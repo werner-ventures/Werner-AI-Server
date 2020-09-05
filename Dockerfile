@@ -1,5 +1,5 @@
 FROM gcr.io/deeplearning-platform-release/basecu101
-RUN conda instal zeromq
+RUN conda install zeromq
 RUN conda install caffe-gpu
 RUN conda install theano
 RUN conda install pip
