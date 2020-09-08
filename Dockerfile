@@ -1,5 +1,5 @@
 FROM gcr.io/deeplearning-platform-release/base-cu101
-RUN conda update --all && \
+RUN conda init && conda update --all && \
     conda create -n cling && \
     conda activate cling && \
     conda install jupyterhub jupyterlab cmake zeromq xeus-cling caffe theano pip && \
