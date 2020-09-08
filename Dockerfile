@@ -3,4 +3,5 @@ RUN conda create -n cling && \
     conda activate cling  # Or `source activate cling` for conda < 4.6 && \
     conda install jupyterhub jupyterlab cmake zeromq xeus-cling caffe theano pip && \
     pip install --no-cache-dir modin[all] pycuda onnxruntime-gpu horovod nvidia-pyindex hummingbird-ml h2o nimbusml && \
+    conda update --all && \
     conda clean --all -f -y
